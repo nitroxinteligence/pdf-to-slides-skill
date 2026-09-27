@@ -20,6 +20,8 @@ Choose the profile that matches use:
 - `print`: appropriate page size, margins, image resolution, and restrained ink coverage;
 - `fillable`: usable form fields, logical tab order, clear labels, and enough space for realistic answers.
 
+For a printed diagnostic or workbook, measure response space in physical units. A line that looks long on screen may be too short for handwriting. Keep prompts with their answer areas, make choice boxes and table cells usable by hand, and inspect page breaks in the rendered A4 or A3 output. Choose landscape only when the actual tables or writing areas benefit from it.
+
 Do not call a PDF fillable because it visually resembles a form. Enter representative responses, save, reopen, edit, clear, and verify every field. Confirm that scoring or calculated fields work if included.
 
 For an interactive form, inspect both the canonical AcroForm field tree and the page widgets after saving. Verify field names, stored values, appearances, and page placement agree. A rendered answer alone does not prove the saved field value is correct.
@@ -29,6 +31,8 @@ For an interactive form, inspect both the canonical AcroForm field tree and the 
 - Preserve source attribution, image credits, and asset license records in the editable source or evidence manifest.
 - Use an available PDF authoring workflow with a maintained editable source. For programmatic generation, tools such as ReportLab can build the file; Poppler rendering and a PDF parser can verify it. Text extraction does not replace visual inspection.
 - Render and inspect every page. Check cropping, overflow, contrast, image quality, pagination, links, form fields, and blank or duplicated pages.
+- Inspect page boundaries around headings, instructions, tables, and writable controls. Keep a short prompt and its field on the same page when possible. Re-render after changing print CSS or page geometry; an unchanged Markdown source does not imply an unchanged PDF.
 - Verify Unicode and accented characters in headings, body text, filenames, bookmarks, and form fields. Normalize combining characters or embed a font that supports them when a render shows missing-glyph boxes.
-- When exporting a PDF from a PPTX, export from the current final PPTX and confirm slide count, order, content, notes policy, dimensions, fonts, and visual parity. Re-export after any PPTX change that affects the PDF.
+- When exporting a PDF from a PPTX, export from the current final PPTX and confirm slide count, order, content, notes policy, dimensions, actual embedded fonts, and visual parity. Re-export after any PPTX change that affects the PDF. Font substitution by an office exporter can preserve a similar appearance while changing the family; disclose what was observed.
+- Check the final output directory for old duplicate PDFs or renderer suffixes before packaging. Extract the delivery ZIP and verify its expected files, not merely its successful creation.
 - Report editable-source validation, PDF generation, rendered-page inspection, fillable-form validation, and export parity as separate states.

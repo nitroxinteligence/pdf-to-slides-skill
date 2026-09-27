@@ -18,6 +18,10 @@ DEPENDENCIES = (
     ("ppt-master", "hugohe3/ppt-master"),
 )
 
+OPTIONAL_FRONTEND_DEPENDENCIES = (
+    ("frontend-slides", "zarazhangrui/frontend-slides"),
+)
+
 
 def skill_roots() -> list[Path]:
     codex_base = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex"))
@@ -59,12 +63,21 @@ def main() -> int:
         action="store_true",
         help="install declared skills that are not present",
     )
+    parser.add_argument(
+        "--with-frontend-slides",
+        action="store_true",
+        help="also check or install Frontend Slides for HTML presentation output",
+    )
     args = parser.parse_args()
 
     results: list[dict[str, str]] = []
     failed = False
 
-    for name, repository in DEPENDENCIES:
+    selected = DEPENDENCIES
+    if args.with_frontend_slides:
+        selected += OPTIONAL_FRONTEND_DEPENDENCIES
+
+    for name, repository in selected:
         existing = locate(name)
         if existing is not None:
             results.append(

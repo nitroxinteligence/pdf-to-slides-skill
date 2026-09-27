@@ -44,6 +44,8 @@ Compare extraction against the rendered pages. At minimum check:
 
 Check the latest source when a claim, statistic, regulation, product detail, or external benchmark may have changed. Record whether a video or audiobook was actually viewed or heard in full, sampled, or assessed only from metadata. A third-party upload does not establish a license to reuse it.
 
+If a search or platform connector reaches a quota or access limit, record that limit and continue with directly accessible primary sources when possible. Do not treat a search snippet, inaccessible page, or metadata record as a full reading of the source.
+
 Create a source manifest with page-level status and limitations. Do not mark extraction complete when unreadable or unavailable pages remain unreported.
 
 ## 4. Per-source dossier
