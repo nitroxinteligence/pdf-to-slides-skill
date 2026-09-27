@@ -2,7 +2,7 @@
 
 ## 1. Cross-source synthesis
 
-Build a thematic matrix across all PDFs:
+Build a thematic matrix across the supplied PDFs and any supporting sources:
 
 - where sources agree;
 - where they complement one another;
@@ -12,6 +12,8 @@ Build a thematic matrix across all PDFs:
 
 Choose a narrative based on the audience and desired outcome, not on the order in which files were attached.
 
+If the project uses a named conceptual model, keep its terms stable. Map any auxiliary diagnostic or measurement dimensions to that model instead of introducing a competing list without explanation. Mark which ideas come from source documents, public benchmarks, and original teaching design.
+
 ## 2. Slide blueprint
 
 Before visual production, define every proposed slide with:
@@ -19,10 +21,12 @@ Before visual production, define every proposed slide with:
 - slide number and purpose;
 - one clear thesis;
 - supporting evidence, example, or data;
-- PDF/page references;
+- source and page, section, or URL references;
 - planned visual form: figure, chart, comparison, timeline, process, diagram, quotation, or composition;
 - speaker-note content;
 - relationship to the previous and next slide.
+
+Specify the slide's function in the narrative: orient, create tension, explain, demonstrate, compare, synthesize, or bridge. Write the transition so a viewer can follow why this slide comes next. For narrated work, estimate speaking time from script, pauses, and visual complexity rather than slide count.
 
 Show the blueprint to the user when choices about narrative, audience, brand, length, or sensitive omissions remain unresolved. Do not seek confirmation for routine layout choices already covered by the brief.
 
@@ -45,13 +49,15 @@ Read the installed PPT Master `SKILL.md` completely before production. Follow it
 Required visual behaviors:
 
 - use a coherent, content-informed art direction;
-- preserve an approved template or brand kit;
+- read and preserve the current approved brand manual or template, including its logo rules, typography, fallback fonts, and slide layouts;
 - vary layouts according to content while maintaining a consistent system;
 - prefer editable native text, shapes, tables, and charts;
-- use high-resolution or generated imagery only when it adds meaning;
-- preserve source credits and image licenses;
+- use imagery when it explains, situates, or advances an idea; do not use photographs merely to fill empty space;
+- maintain an asset ledger for images, icons, illustrations, and fonts with origin and permitted use;
 - avoid repetitive title-and-bullets layouts and decorative filler;
 - keep citations readable without competing with the core message.
+
+Use the actual approved identity asset. Do not redraw an unavailable logo by approximation or guess an unconfirmed handle, claim, or presenter detail. Apply recurring identity through the master or layouts without letting it compete with the content.
 
 ## 6. QA and completion
 
@@ -65,7 +71,8 @@ Check:
 - citations and page references resolve to the evidence ledger;
 - all coverage-matrix items have a final disposition;
 - speaker notes contain promised nuance;
+- each substantive slide has a clear role and a causal, question-based, or contrastive bridge to the next;
+- assets have recorded sources and use rights;
 - final deck opens and remains editable.
 
-Fix defects and re-render changed slides. Report separately: PPTX validity, rendered preview, visual inspection, content/source audit, and limitations.
-
+Fix defects and re-render changed slides. When a PDF preview is requested, export it from the current editable deck and compare slide order, page count, and visible content. Report separately: PPTX validity, rendered preview, visual inspection, content/source audit, PDF export, and limitations.
